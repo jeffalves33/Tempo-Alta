@@ -10,7 +10,7 @@ document.getElementById('estado').addEventListener('change', event => {
                 cidades.sort((a, b) => a.nome.localeCompare(b.nome));
                 cidades.forEach(cidade => {
                     const option = document.createElement('option');
-                    option.value = cidade.id;
+                    option.value = cidade.nome;
                     option.textContent = cidade.nome;
                     cidadeSelect.appendChild(option);
                 });

@@ -6,7 +6,7 @@ fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
         estados.sort((a, b) => a.nome.localeCompare(b.nome));
         estados.forEach(estado => {
             const option = document.createElement('option');
-            option.value = estado.id;
+            option.value = estado.sigla;
             option.textContent = estado.sigla.concat(" - ", estado.nome);
             estadoSelect.appendChild(option);
         });

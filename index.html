@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div id="mainRow" class="row">
             <select id="estado" class="form-select" name="estado" aria-label="Default select example">
                 <option selected>seu estado</option>
             </select>
@@ -23,12 +23,13 @@
             <select id="cidade" class="form-select" name="cidade" aria-label="Default select example">
                 <option selected>sua cidade</option>
             </select>
-            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-info" onclick="managerInformations()">Info</button>
         </div>
     </div>
 </body>
 
 <script src="src/scripts/ApiEstado.js"></script>
 <script src="src/scripts/ApiCidade.js"></script>
+<script src="src/scripts/ApiClimaTemperatura.js"></script>
 
 </html>
